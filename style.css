@@ -152,36 +152,60 @@ button:hover{
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@media (max-width: 660px){
-  .container{
+@media (max-width: 660px) {
+  .container {
     padding: 20px;
   }
-  .wrapper .text-input{
+
+  .wrapper .text-input {
     flex-direction: column;
   }
-  .text-input .to-text{
+
+  .text-input .to-text {
     border-left: 0px;
     border-top: 1px solid #ccc;
   }
-  .text-input textarea{
+
+  .text-input textarea {
     height: 200px;
   }
-  .controls .row .icons{
+
+  .controls .row .icons {
     display: none;
   }
-  .container button{
+
+  .container button {
     padding: 13px;
     font-size: 16px;
   }
-  .controls .row button{
+
+  .controls .row button {
     font-size: 16px;
   }
-  .controls .exchange{
+
+  .controls .exchange {
     font-size: 14px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 0;
+    margin: 1em 0 0.5em 0;
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+
+    font-size: 20px;
+    line-height: 40px;
+    padding: 5px 5px 5px 90px;
+    color: #358181;
+    box-shadow:
+      inset -85px 0 35px #559191d9;
+    border-radius: 0 10px 0 10px;
+    background: #fff url(images/logo1.jpg) no-repeat center left;
   }
 }
 
-select{
+select {
 
   border: #333;
   border-style: groove;
