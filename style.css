@@ -1,63 +1,71 @@
-/* Import Google Font - Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-h1{
-  position: absolute;
+h1 {
+  position: fixed;
+  flex: content;
+  display: flex;
   top: 0;
   margin: 1em 0 0.5em 0;
-	font-weight: 600;
-	font-family: 'Titillium Web', sans-serif;
-	
-	font-size: 36px;
-	line-height: 40px;
-	padding: 15px 15px 15px 90px;
-	color: #358181;
-	box-shadow: 
-		
-		inset -285px 0 35px #559191d9;
-	border-radius: 0 10px 0 10px;
-	background: #fff url(images/logo1.jpg) no-repeat center left;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+
+  font-size: 36px;
+  line-height: 40px;
+  padding: 15px 15px 15px 90px;
+  color: #358181;
+  box-shadow:
+
+    inset -285px 0 35px #559191d9;
+  border-radius: 0 10px 0 10px;
+  background: #fff url(images/logo1.jpg) no-repeat center left;
 }
 
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
+  padding: 80px 10px;
   min-height: 100vh;
   background-image: url(images/background.jpg);
   background-size: cover;
+  
 }
 
 
 
-.container{
+.container {
   max-width: 690px;
   width: 100%;
   padding: 30px;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
 }
-.wrapper{
+
+.wrapper {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.wrapper .text-input{
+
+.wrapper .text-input {
   display: flex;
   border-bottom: 1px solid #ccc;
 }
-.text-input .to-text{
+
+.text-input .to-text {
   border-radius: 0px;
   border-left: 1px solid #ccc;
 }
-.text-input textarea{
+
+.text-input textarea {
   height: 250px;
   width: 100%;
   border: none;
@@ -68,22 +76,30 @@ body{
   padding: 10px 15px;
   border-radius: 5px;
 }
-.text-input textarea::placeholder{
+
+.text-input textarea::placeholder {
   color: #b7b6b6;
 }
-.controls, li, .icons, .icons i{
+
+.controls,
+li,
+.icons,
+.icons i {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.controls{
+
+.controls {
   list-style: none;
   padding: 12px 15px;
 }
-.controls .row .icons{
+
+.controls .row .icons {
   width: 38%;
 }
-.controls .row .icons i{
+
+.controls .row .icons i {
   width: 50px;
   color: #adadad;
   font-size: 14px;
@@ -91,15 +107,18 @@ body{
   transition: transform 0.2s ease;
   justify-content: center;
 }
-.controls .row.from .icons{
+
+.controls .row.from .icons {
   padding-right: 15px;
   border-right: 1px solid #ccc;
 }
-.controls .row.to .icons{
+
+.controls .row.to .icons {
   padding-left: 15px;
   border-left: 1px solid #ccc;
 }
-.controls .row button{
+
+.controls .row button {
   color: #333;
   border: none;
   outline: none;
@@ -107,35 +126,43 @@ body{
   background: none;
   padding-left: 5px;
 }
-.text-input textarea::-webkit-scrollbar{
+
+.text-input textarea::-webkit-scrollbar {
   width: 4px;
 }
-.controls .row button::-webkit-scrollbar{
+
+.controls .row button::-webkit-scrollbar {
   width: 8px;
 }
+
 .text-input textarea::-webkit-scrollbar-track,
-.controls .row button::-webkit-scrollbar-track{
+.controls .row button::-webkit-scrollbar-track {
   background: #fff;
 }
-.text-input textarea::-webkit-scrollbar-thumb{
+
+.text-input textarea::-webkit-scrollbar-thumb {
   background: #ddd;
   border-radius: 8px;
 }
-.controls .row button::-webkit-scrollbar-thumb{
+
+.controls .row button::-webkit-scrollbar-thumb {
   background: #999;
   border-radius: 8px;
   border-right: 2px solid #ffffff;
 }
-.controls .exchange{
+
+.controls .exchange {
   color: #adadad;
   cursor: pointer;
   font-size: 16px;
   transition: transform 0.2s ease;
 }
-.controls i:active{
+
+.controls i:active {
   transform: scale(0.9);
 }
-.container button{
+
+.container button {
   width: 100%;
   padding: 14px;
   outline: none;
@@ -147,7 +174,8 @@ body{
   border-radius: 5px;
   background: #0f6161;
 }
-button:hover{
+
+button:hover {
   background: #297272;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
